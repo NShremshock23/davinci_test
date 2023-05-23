@@ -8,6 +8,19 @@
         <h2>Testing Homepage</h2>
     </div>
 
+    <div>
+        <h3>POST Demo - Saved Responses</h3>
+        
+        <% if (post_responses.length > 0) { %>
+            <% post_responses.forEach(response => { %>
+                <h3 class="title"><%= response.title %></h3>
+                <p class="snippet"><%= response.body %></p>
+            <% }) %>
+        <% } else { %>
+            <p>There are no submissions to display.</p>
+        <% } %>
+    </div>
+
     <%- include("./partials/footer.ejs") %>
 </body>
 </html>

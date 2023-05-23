@@ -6,7 +6,15 @@
 
     <div>
         <h2>POST Method Demo</h2>
-        <p>[TODO]</p>
+        <div>
+            <form action="/post_demo" method="POST">
+              <label for="title">Submission title:</label>
+              <input type="text" id="title" name="title" required>
+              <label for="body">Submission body:</label>
+              <textarea id="body" name="body" required></textarea>
+              <button>Submit</button>
+            </form>
+          </div>
     </div>
 
     <%- include("./partials/footer.ejs") %>
